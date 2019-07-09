@@ -128,13 +128,6 @@ h1 {
 	text-align: center;
 }
 
-.banner {
-	background: url("images/RoseGold.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	min-height: 150px;
-	max-height: 200px;
-}
 
 .banner-text1 {
 	padding: 3%;
