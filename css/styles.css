@@ -128,6 +128,16 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font-family: 'odengregular';
+	font-size: 3.5rem;
+	font-weight: lighter;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 2px 10px #000000;
+
+}
+
 
 .banner-text1 {
 	padding: 3%;
@@ -141,6 +151,13 @@ h1 {
 	max-width: 400px;
 	margin: auto;
 	color: #835653;
+}
+
+.banner-text3 {
+	padding: 8%;
+	max-width: 400px;
+	margin: auto;
+	color: white;
 }
 
 .content {
@@ -242,7 +259,16 @@ footer img {
 	flex-wrap: wrap;
 }
 
+
 /* END FLEX BOX */
+
+/* VENUE LISTS */
+
+.content ul li {
+	list-style-type: none;
+}
+
+/* END VENUE LISTS */
 
 
 
