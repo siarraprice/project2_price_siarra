@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>The Olde Wicks Factory | Event Space</title>
+
+		<link type="text/css" rel="stylesheet" href="styles.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	</head>
+
+  <body>
+
+    <button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+
+    <header>
+      <img src="images/OWF-Logo.png" alt="Olde Wicks Factory" title="Olde Wicks Factory">
+
+      <div class="menu">
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="about.html" title="Our History">Our History</a></li>
+          <li><a href="venues.html" title="Venues">Venues</a></li>
+          <li><a href="contact.html" title="Contact">Contact Us</a></li>
+        </ul>
+
+      </div>
+
+          <nav class="desktop-menu">
+            <ul>
+              <li><a href="index.html" title="Home">Home</a></li>
+              <li><a href="about.html" title="Our History">Our History</a></li>
+              <li><a href="venues.html" title="Venues">Venues</a></li>
+              <li><a href="contact.html" title="Contact">Contact Us</a></li>
+            </ul>
+          </nav>
+
+    </header>
+
+
+    <main>
+      <section class="banner">
+        <div class="banner-text2"><h1>Contact Olde Wicks</h1></div>
+      </section>
+
+      <article class="content">
+        <p>Call Olde Wicks Factory Special Events Center today at (618) 651-6323 to speak with a member of our team regarding your gathering and our event space options. We are happy to schedule a consultation and tour to help you choose the perfect party venue for your needs. </p>
+        <p>You can also reach out to us directly by filling out the form below!</p>
+      </article>
+
+
+      <div class="contactform" ng-app="ContactForm">
+
+      	<h2>Send a message or question</h2>
+
+      	<form name="cf" ng-controller="cfController as cfCtrl" ng-submit="submitForm(cf.$valid)" novalidate>
+
+      		<div class="form-group">
+      			<label for="name">Name</label>
+      			<input id="name" type="text" name="name" ng-model="name" required>
+      		</div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" type="phone" name="phone" required>
+          </div>
+
+      		<div class="form-group">
+      			<label for="email">Email</label>
+      			<input id="email" type="email" name="email" required>
+      		</div>
+
+      		<div class="form-group">
+      			<label for="msg">Message</label>
+      			<textarea id="msg" name="message" rows="4" ng-model="msg" required></textarea>
+      		</div>
+
+      		<input type="submit" value="Send" ng-disabled="cf.$invalid"/>
+      	</form>
+      </div>
+
+    </main>
+
+    <aside class="contact-page-photos">
+
+      <section class="flex-content">
+        <section class="flex-container">
+
+          <figure><img src="images/coordinators.jpg" alt="Venue Coordinators">
+            <figcaption>Jennifer & Shannon Ostrander, Venue Coordinators</figcaption>
+          </figure>
+
+          <figure><img src="images/owners.jpg" alt=" Owners">
+            <figcaption>Jennifer & Frank Ostrander, Property Owners</figcaption>
+          </figure>
+
+          <figure><img src="images/vendors.jpg" alt="Property Vendors">
+            <figcaption>Olde Wicks Factory is home to several female-owned businesses</figcaption>
+          </figure>
+
+        </section>
+      </section>
+
+    </aside>
+
+    <footer>
+      <p class="footer-title">The Olde Wicks Factory Special Events Center</p>
+
+      <p class="footer-content">
+        1100 5th Street <br/>
+        Highland Illinois <br/>
+        (618) 651-6323
+      </p>
+
+      <a href="https://www.facebook.com/oldewicksfactory/"><img src="images/facebook-2.png" alt="Facebook"></a>
+
+      <p class="footer-copyright">Copyright 2019</p>
+
+    </footer>
+
+    <script src="js/hamburgermenu.js"></script>
+    <script src="js/form.js"></script>
+
+
+  </body>
+
+</html>
